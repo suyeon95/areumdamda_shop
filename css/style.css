@@ -1,0 +1,86 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+body{font-family: 'RIDIBatang'; font-size: 14px; line-height: 24px; color: #222;}
+
+/*리디바탕*/
+   @font-face {font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+/* header */
+#header{width: 1320px; height: 192px; margin: 0 auto; position: relative; text-align: center; font-family: 'Noto Serif KR', serif; box-sizing: border-box;}
+#header ul li{float: left;}
+.header_link{position: absolute; right: 0; z-index: 99;}
+.header_link li a{display: block; padding: 10px 15px;}
+.header_link li a:hover{text-shadow: #f9c7d2 0 3px 3px;}
+.nav{position: absolute; 
+    top:20px; /*기준변경*/
+    width: 100%; height: 150px;}
+.nav li{text-align: center;  
+    float: left; width: 20%;}
+.nav li a{display: block; font-size: 25px; margin-top: 88px; padding: 30px 0; /*추가*/ }
+.nav li:nth-child(3) a{padding-top:0; margin: 0 0 20px 0;}
+.nav li a:hover{text-shadow: #f9c7d2 0 3px 3px;}
+
+/* banner */
+#banner{width: 100%; height: 850px; margin: 0 auto; background: url(../image/banner.jpg) no-repeat center top; background-size: cover;}
+
+/* text */
+#text{width: 100%; height: 420px; text-align: center; padding: 100px 0; box-sizing: border-box;}
+.px25{font-size: 25px;}
+.px60{font-size: 60px; margin: 50px 0 70px; font-family: 'Noto Serif KR', serif;}
+.px18{font-size: 18px; line-height: 28px;}
+.px20{font-size: 20px; margin: 15px 0;}
+.blod{font-weight: bold;}
+
+/* category */
+#category{width: 100%; height: 640px; margin: 0 auto;}
+#category ul{width: 100%; height: 640px;}
+#category ul li{float: left; width: 33.3%; height: 100%; position: relative; overflow: hidden;}
+#category ul li:nth-child(1){background: url(../image/hover1.jpg) no-repeat center top;}
+#category ul li:nth-child(2){background: url(../image/hover2.jpg) no-repeat center top;}
+#category ul li:nth-child(3){background: url(../image/hover3.jpg) no-repeat center top;}
+#category ul li:hover .hover{opacity: 1; transform: translateY(-640px);}
+#category ul li:hover .hover2{opacity: 1; transform: translateY(640px);}
+.hover{background-color: rgba(255, 255, 255, 0.5); width: 100%; height: 640px; position: absolute; top: 640px; text-align: center; opacity: 0; transition: all 1s;}
+.hover2{background-color: rgba(255, 255, 255, 0.5); width: 100%; height: 640px; position: absolute; top:-640px; text-align: center; opacity: 0; transition: all 1s;}
+h1{padding: 265px 0 50px; font-size: 40px;}
+h3{font-size: 18px;}
+.hover a{display: inline-block; margin-top: 20px; padding: 5px 25px; border: #222 1px solid; border-radius: 25px;}
+.hover a:hover{border-top: 0; border-bottom: 0;}
+.hover2 a{display: inline-block; margin-top: 20px; padding: 5px 25px; border: #222 1px solid; border-radius: 25px;}
+.hover2 a:hover{border-top: 0; border-bottom: 0;}
+
+/* menu1 */
+#menu1{width: 100%; height: 1110px; margin: 150px auto 0; background: url(../image/background1.jpg) no-repeat center top;}
+.menu_inner{width: 1320px; height: 1082px; margin: 0 auto;}
+.menu_text{width: 1320px; height: 450px; box-sizing: border-box; padding: 40px 0 0 560px;}
+.px30{font-size: 30px;}
+.sans{font-family: "noto sans"; margin: 30px 0 70px;}
+.btn{display: inline-block; padding: 5px 25px; border: #222 1px solid; border-radius: 25px; box-sizing: border-box;}
+.btn:hover{border-top: 0; border-bottom: 0;}
+
+/* menu2 */
+#menu2{width: 100%; height: 1110px; margin: 150px auto 0; background: url(../image/background2.jpg) no-repeat center top;}
+.menu2_text{width: 1320px; height: 450px; box-sizing: border-box; padding: 40px 0 0 40px;}
+
+/* menu3 */
+#menu3{width: 100%; height: 1110px; margin: 150px auto 0; background: url(../image/background3.jpg) no-repeat center top;}
+.menu_text{width: 1320px; height: 450px; box-sizing: border-box; padding: 40px 0 0 560px;}
+
+
+/*footer*/
+#footer{width: 100%; height: 383px; margin: 0 auto; background: url(../image/background5.jpg) no-repeat center top;}
+.footer_inner{width: 1320px; height: 100%; margin: 0 auto; box-sizing: border-box; padding-top: 100px;}
+.icon{float: right;}
+.icon li{float: left;}
+.icon li a{display: block; margin: 0 10px; opacity: 0.5;}
+.icon li a:hover{opacity: 1;}
+.footer_text{color: #555;}
+.footer_logo img{margin-bottom: 25px;}
+
+
+.top{position:fixed; bottom:50px; right:50px; display:none;}
+
